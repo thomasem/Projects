@@ -34,7 +34,7 @@ if __name__ == "__main__":
     parser.add_argument(
         '--hateful',
         default=True,
-        help="Use generator method to calculate. Default: False",
+        help="Use generator method to calculate. (Default: False)",
         action="store_true"
     )
     terminal_or_continue.add_argument(
