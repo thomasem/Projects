@@ -14,8 +14,6 @@ if __name__ == "__main__":
     parser.add_argument('num', type=int, help="Number of digits of PI to show.")
     args = parser.parse_args()
 
-    stdout.write(str(fib(0)))
-    stdout.flush()
     for num in range(1, args.num):
-        stdout.write(" %s" % str(fib(num)))
+        stdout.write("%s " % str(fib(num)))
         stdout.flush()
