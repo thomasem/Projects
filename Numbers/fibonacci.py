@@ -40,7 +40,7 @@ if __name__ == "__main__":
     terminal_or_continue.add_argument(
         '-n',
         type=int,
-        help="Number of digits of PI to show."
+        help="Number of Fibonacci Numbers to show."
     )
     terminal_or_continue.add_argument(
         '--continuous',
