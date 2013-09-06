@@ -33,8 +33,8 @@ if __name__ == "__main__":
     terminal_or_continue = parser.add_mutually_exclusive_group()
     parser.add_argument(
         '--hateful',
-        default=True,
-        help="Use generator method to calculate. (Default: False)",
+        default=False,
+        help="Use recursive method to calculate. (Default: False)",
         action="store_true"
     )
     terminal_or_continue.add_argument(
@@ -45,7 +45,8 @@ if __name__ == "__main__":
     terminal_or_continue.add_argument(
         '--continuous',
         default=False,
-        help="Continue calculating until your machine falls apart.",
+        help="Continue calculating until your machine falls apart." +
+             " (Default: False)",
         action="store_true"
     )
     args = parser.parse_args()
